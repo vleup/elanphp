@@ -1,0 +1,29 @@
+*{
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    background-color: grey;
+}
+#wrapper {
+    max-width: 1200px;
+    margin: auto;
+}
+main {
+    align-content: center;
+}
+#banner {
+    background-color: black;
+    width: 100%;
+}
+#banner h1 {
+    color: white;
+}
+#banner p {
+    color: white;
+}
+#stuff section {
+    background-color: white;
+    display: inline;
+    justify-content: space-evenly;
+}
