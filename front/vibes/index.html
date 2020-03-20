@@ -33,18 +33,38 @@
                 </article>
                 <article id="wyg">
                     <h3>What you get?</h3>
-                    <img src="list1.png" alt="list 1">
-                    <h4>COLORFUL & COMPACT</h4>
-                    <p>Je ne sais plus ce que je dois écrire</p>
-                    <img src="list2.png" alt="list 2">
-                    <h4>RAPIDE & PAS CHER</h4>
-                    <p>Je ne sais plus ce que je dois écrire</p>
-                    <img src="list3.png" alt="list 3">
-                    <h4>BEAVIS & BUTTHEAD</h4>
-                    <p>Je ne sais plus ce que je dois écrire</p>
+                    <div>
+                        <figure><img src="list1.png" alt="list 1"></figure>
+                        <h4>COLORFUL & COMPACT</h4>
+                        <p>Je ne sais plus ce que je dois écrire</p>
+                    </div>
+                    <div>
+                        <figure><img src="list2.png" alt="list 2"></figure>
+                        <h4>RAPIDE & PAS CHER</h4>
+                        <p>Je ne sais plus ce que je dois écrire</p>
+                    </div>
+                    <div>
+                        <figure><img src="list3.png" alt="list 3"></figure>
+                        <h4>BEAVIS & BUTTHEAD</h4>
+                        <p>Je ne sais plus ce que je dois écrire</p>
+                    </div>
                 </article>
                 <div id="titles">
-
+                    <button class="accordion">Section 1</button>
+                    <div>
+                        <p class="panel">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sint quis esse saepe quam, eius odio aperiam qui unde perspiciatis veritatis veniam.
+                            Similique praesentium soluta saepe tempore distinctio facere vero labore.</p>
+                    </div>
+                    <button class="accordion">Section 2</button>
+                    <div>
+                        <p class="panel">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur asperiores cum molestias obcaecati aliquam? Exercitationem animi a,
+                            doloremque vitae facilis eius veritatis, modi illum iure, dolor enim ad neque adipisci!</p>
+                    </div>
+                    <button class="accordion">Section 3</button>
+                    <div>
+                        <p class="panel">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil blanditiis illo ad reprehenderit commodi corporis aliquid,
+                            doloribus nulla mollitia fuga necessitatibus amet deserunt sapiente cupiditate laboriosam minus. Voluptatum, corrupti ab.</p>
+                    </div>
                 </div>
             </section>       
             <section id="gallery">
@@ -59,18 +79,24 @@
             </section>
             <article id="article1">
                 <h2>TESTIMONIALS</h2>
-                <img src="portrait.png" alt="portrait">
-                <p>Words can be like X-rays, if you use them properly—they’ll go through anything. You read and you’re pierced. Words can be like X-rays,
-                    if you use them properly—they’ll go through anything. You read and you’re pierced.</p>
-                <p><strong>Aldous Huxley</strong>, Brave New World</p>
-                <img src="portrait.png" alt="portrait">
-                <p>Words can be like X-rays, if you use them properly—they’ll go through anything. You read and you’re pierced. Words can be like X-rays,
-                    if you use them properly—they’ll go through anything. You read and you’re pierced.</p>
-                <p><strong>Aldous Huxley</strong>, Brave New World</p>
-                <img src="portrait.png" alt="portrait">
-                <p>Words can be like X-rays, if you use them properly—they’ll go through anything. You read and you’re pierced. Words can be like X-rays,
-                    if you use them properly—they’ll go through anything. You read and you’re pierced.</p>
-                <p><strong>Aldous Huxley</strong>, Brave New World</p>
+                <div>
+                    <figure class="portrait1"><img src="portrait.png" alt="portrait"></figure>
+                    <p>Words can be like X-rays, if you use them properly—they’ll go through anything. You read and you’re pierced. Words can be like X-rays,
+                        if you use them properly—they’ll go through anything. You read and you’re pierced.</p>
+                    <p class="reference1"><strong>Aldous Huxley</strong>, Brave New World</p>
+                </div>
+                <div>
+                    <figure class="portrait2"><img src="portrait.png" alt="portrait"></figure>
+                    <p>Words can be like X-rays, if you use them properly—they’ll go through anything. You read and you’re pierced. Words can be like X-rays,
+                        if you use them properly—they’ll go through anything. You read and you’re pierced.</p>
+                    <p class="reference2"><strong>Aldous Huxley</strong>, Brave New World</p>
+                </div>
+                <div>
+                    <figure class="portrait1"><img src="portrait.png" alt="portrait"></figure>
+                    <p>Words can be like X-rays, if you use them properly—they’ll go through anything. You read and you’re pierced. Words can be like X-rays,
+                        if you use them properly—they’ll go through anything. You read and you’re pierced.</p>
+                    <p class="reference1"><strong>Aldous Huxley</strong>, Brave New World</p>
+                </div>
                 <a href=""><img src="buttonArt1.png" alt="bla bla bla"></a>
             </article>
             <article id="article2">
@@ -82,17 +108,21 @@
             <address id="contact">
                 <h2>CONTACT</h2>
                 <form action="">
-                    <label for="name">YOUR NAME</label>
-                    <input type="text" id="name">
-                    <label for="email">YOUR EMAIL</label>
-                    <input type="email" id="email">
-                    <label for="phone">YOUR PHONE</label>
-                    <input type="text" id="phone">
-                    <label for="subject">YOUR SUBJECT</label>
-                    <input type="text" id="subject">
-                    <label for="message">YOUR MESSAGE</label>
-                    <textarea id="message" cols="30" rows="10"></textarea>
-                    <input type="submit" value="SEND" id="">
+                    <div>
+                        <label for="name">YOUR NAME</label>
+                        <input type="text" id="name">
+                        <label for="email">YOUR EMAIL</label>
+                        <input type="email" id="email">
+                        <label for="phone">YOUR PHONE</label>
+                        <input type="text" id="phone">
+                    </div>
+                    <div>
+                        <label for="subject">YOUR SUBJECT</label>
+                        <input type="text" id="subject">
+                        <label for="message">YOUR MESSAGE</label>
+                        <textarea id="message" cols="30" rows="10"></textarea>
+                        <input type="submit" value="SEND" id="send">
+                    </div>
                 </form>
             </address>
         </main>

@@ -10,9 +10,9 @@ body {
 }
 header {
     display: flex;
-    flex-direction: row;
     width: 100%;
-    align-items: flex-end;
+    align-items: baseline;
+    justify-content: space-between;
 }
 main {
     display: flex;
@@ -20,9 +20,13 @@ main {
     flex-direction: column;
 }
 #banner {
+    display: flex;
+    flex-direction: column;
     background-color: black;
     width: 100%;
+    align-items: center;
     text-align: center;
+    padding: 150px;
 }
 #banner h1, #banner p {
     color: white;
@@ -30,42 +34,101 @@ main {
 
 #stuff {
     display: flex;
-    flex-direction: row;
+    flex: 1;
     background-color: white;
     width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
-
-#article1 {
-    background-color: white;
-    width: 100%;
-    text-align: center;
+#chooseUs {
+    max-width: 400px;
 }
-#article2 {
-    background-color: black;
-    width: 100%;
-    text-align: center;
+#wyg {
+    display: flex;
+    flex-direction: column;
 }
-#article2 h2, #article2 p {
-    color: white;
-    width: 100%;
+#wyg div {
+    display: inline;
+}
+#wyg figure {
+    float: left;
+}
+#titles {
+    max-width: 400px;
 }
 #gallery {
     display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
     width: 100%;
 }
-#contact {
+#article1 {
+    display: flex;
+    flex-direction: column;
     background-color: white;
     width: 100%;
     text-align: center;
+    align-items: center;
+    padding: 100px;
+}
+#article2 {
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    width: 100%;
+    text-align: center;
+    align-items: center;
+    padding: 100px;
+}
+#article2 h2, #article2 p {
+    color: white;
+}
+#contact {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    width: 100%;
+    text-align: center;
+    align-items: center;
+    padding: 50px;
+}
+#contact form {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+#contact div {
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+}
+#contact input {
+    max-width: 400px;
 }
 footer {
     display: flex;
-    flex-direction: row;
+    flex: 1;
     background-color: black;
     width: 100%;
+    justify-content: space-evenly;
 }
 footer h3, footer p {
     color: white;
+}
+#about {
+    max-width: 300px;
+}
+#newsletter {
+    max-width: 300px;
+}
+.reference1 {
+    float: right;
+}
+.reference2 {
+    float: left;
+}
+.portrait1 {
+    float: left;
+}
+.portrait2 {
+    float: right;
 }
