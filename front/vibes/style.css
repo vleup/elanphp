@@ -11,47 +11,60 @@ body {
 header {
     display: flex;
     width: 100%;
-    align-items: baseline;
+    align-items: flex-end;
     justify-content: space-between;
+    font-family: 'Oswald', sans-serif;
 }
 main {
-    display: flex;
     width: 100%;
-    flex-direction: column;
+    font-family: 'Roboto', sans-serif;
 }
 #banner {
-    display: flex;
-    flex-direction: column;
-    background-color: black;
-    width: 100%;
-    align-items: center;
-    text-align: center;
-    padding: 150px;
+    padding-left: 9em;
+    padding-right: 9em;
+    padding-top: 6em;
+    padding-bottom: 3em;
 }
 #banner h1, #banner p {
     color: white;
+    font-family: 'Roboto', sans-serif;
 }
-
+#banner a {
+    padding-top: 1.5em;
+}
+#banner button {
+    background-color: black;
+    color: white;
+    border: 4px solid white;
+}
 #stuff {
-    display: flex;
-    flex: 1;
-    background-color: white;
-    width: 100%;
-    flex-wrap: wrap;
     justify-content: space-between;
 }
 #chooseUs {
     max-width: 400px;
+    padding-left: 3em;
+    padding-right: 3em;
 }
 #wyg {
-    display: flex;
-    flex-direction: column;
+    max-width: 400px;
+    min-width: 200px;
 }
 #wyg div {
     display: inline;
+    max-width: 400px;
 }
 #wyg figure {
     float: left;
+    margin: 0;
+    padding-top: 1em;
+    padding-right: 1em;
+}
+#wyg h4 {
+    font-size: 13px;
+    margin: 0;
+}
+#wyg p {
+    font-size: 12px;
 }
 #titles {
     max-width: 400px;
@@ -62,57 +75,83 @@ main {
     width: 100%;
 }
 #article1 {
-    display: flex;
-    flex-direction: column;
+    padding-top: 1.5em;
+    padding-left: 9em;
+    padding-right: 9em;
+    padding-bottom: 1.5em;
+}
+#article1 div{
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+#article1 em {
+    font-style: italic;
+}
+#article1 button {
     background-color: white;
-    width: 100%;
-    text-align: center;
-    align-items: center;
-    padding: 100px;
+    color: #e21bc1;
+    border: 4px solid #e21bc1;
 }
 #article2 {
-    display: flex;
-    flex-direction: column;
-    background-color: black;
-    width: 100%;
-    text-align: center;
-    align-items: center;
-    padding: 100px;
+    padding-left: 7em;
+    padding-right: 7em;
+    padding-bottom: 1.5em;
+    padding-top: 1.5em;
 }
 #article2 h2, #article2 p {
     color: white;
 }
+#article2 button {
+    background-color: black;
+    color: #e21bc1;
+    border: 4px solid #e21bc1;
+}
 #contact {
-    display: flex;
-    flex-direction: column;
-    background-color: white;
-    width: 100%;
-    text-align: center;
-    align-items: center;
-    padding: 50px;
+    padding-left: 3em;
+    padding-right: 3em;
 }
 #contact form {
-    width: 100%;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
+
 }
 #contact div {
-    display: flex;
-    flex-direction: column;
-    padding: 50px;
+    padding-left: 4em;
+    padding-right: 4em;
+    padding-bottom: 1.5em;
 }
-#contact input {
-    max-width: 400px;
+#send {
+    width: 100px;
+    margin-top: 10px;
+    background-color: #e21bc1;
+    border: none;
+    color: white;
+    font-size: 16px; 
+    padding: 10px 0px;   
+}
+#contact label {
+    text-align: left;
+    padding-bottom: 10px;
+    padding-top: 10px;
 }
 footer {
-    display: flex;
-    flex: 1;
-    background-color: black;
-    width: 100%;
     justify-content: space-evenly;
+    font-family: 'Roboto', sans-serif;
 }
 footer h3, footer p {
     color: white;
+}
+footer h3 {
+    font-size: 14px;
+}
+footer p {
+    font-size: 12px;
+}
+footer a:link {
+    color: palevioletred;
+}
+footer a:visited {
+    color: red;
 }
 #about {
     max-width: 300px;
@@ -121,10 +160,12 @@ footer h3, footer p {
     max-width: 300px;
 }
 .reference1 {
-    float: right;
+    text-align: right;
+    font-size: 12px;
 }
 .reference2 {
-    float: left;
+    text-align: left;
+    font-size: 12px;
 }
 .portrait1 {
     float: left;
@@ -132,3 +173,51 @@ footer h3, footer p {
 .portrait2 {
     float: right;
 }
+.accordion {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 200px;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.5s;
+  }
+  .active, .accordion:hover {
+    background-color: #ccc;
+  }
+  .panel {
+    padding: 0 18px;
+    overflow: hidden;
+    display: none;
+  }
+  .flexdown {
+      display: flex;
+      flex-direction: column;
+  }
+  .flexone {
+      display: flex;
+      flex: 1;
+  }
+  .central {
+      align-items: center;
+      text-align: center;
+  }
+  .linkbutton {
+    text-align: center;
+    padding: 14px 40px;
+    font-size: 24px;
+    text-transform: uppercase;
+  }
+  .white {
+      background-color: white;
+      width: 100%;
+  }
+  .black {
+    background-color: black;
+    width: 100%;
+  }
+  @media all and (max-width: 1024px) {
+      
+  }

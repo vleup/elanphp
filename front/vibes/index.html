@@ -4,6 +4,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/css?family=Oswald|Roboto&display=swap" rel="stylesheet">
         <title>Exercice Vibe</title>
     </head>
     <body>
@@ -11,21 +12,21 @@
         <header>
             <a href=""><img src="logo.png" alt="logo"></a>
             <nav id="main">
-                <a href="">HOME</a>
-                <a href="">ABOUT</a>
-                <a href="">GALLERY</a>
-                <a href="">TESTIMONIALS</a>
-                <a href="">CONTACT</a>
+                <a href="#wrapper">HOME</a>
+                <a href="#about">ABOUT</a>
+                <a href="#gallery">GALLERY</a>
+                <a href="#article1">TESTIMONIALS</a>
+                <a href="#contact">CONTACT</a>
                 <a href="">PAGES</a>
             </nav>
         </header>
-        <main>
-            <section id="banner">
+        <main class="flexdown">
+            <section id="banner" class="central black">
                 <h1>HTML TEMPLATE FOR CREATIVE FOLKS AND DESIGN AGENCIES</h1>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur quidem coronavirus ullam officia esse perspiciatis dolorem repudiandae.</p>
-                <a href=""><img src="buttonBanner.png" alt="read more"></a>
+                <a href=""><button type="button" class="linkbutton">read more</button></a>
             </section>
-            <section id="stuff">
+            <section id="stuff" class="flexone white">
                 <article id="chooseUs">
                     <h3>Why choose us?</h3>
                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis quisquam voluptatibus sequi saepe ipsam</p>
@@ -65,6 +66,26 @@
                         <p class="panel">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil blanditiis illo ad reprehenderit commodi corporis aliquid,
                             doloribus nulla mollitia fuga necessitatibus amet deserunt sapiente cupiditate laboriosam minus. Voluptatum, corrupti ab.</p>
                     </div>
+                    <!--<script>
+                        var acc = document.getElementsByClassName("accordion");
+                        var i;
+
+                        for (i = 0; i < acc.length; i++) {
+                          acc[i].addEventListener("click", function() {
+                            /* Toggle between adding and removing the "active" class,
+                            to highlight the button that controls the panel */
+                            this.classList.toggle("active");
+                        
+                            /* Toggle between hiding and showing the active panel */
+                            var panel = this.nextElementSibling;
+                            if (panel.style.display === "block") {
+                              panel.style.display = "none";
+                            } else {
+                              panel.style.display = "block";
+                            }
+                          });
+                        }
+                    </script>-->
                 </div>
             </section>       
             <section id="gallery">
@@ -77,38 +98,38 @@
                 <img src="gallery7.png" alt="image 7">
                 <img src="gallery8.png" alt="image 8">
             </section>
-            <article id="article1">
-                <h2>TESTIMONIALS</h2>
+            <article id="article1" class="central white">
+                <h2>TESTIMONIALS</h2><hr>
                 <div>
                     <figure class="portrait1"><img src="portrait.png" alt="portrait"></figure>
-                    <p>Words can be like X-rays, if you use them properly—they’ll go through anything. You read and you’re pierced. Words can be like X-rays,
-                        if you use them properly—they’ll go through anything. You read and you’re pierced.</p>
+                    <p><em>Words can be like X-rays, if you use them properly—they’ll go through anything. You read and you’re pierced. Words can be like X-rays,
+                        if you use them properly—they’ll go through anything. You read and you’re pierced.</em></p>
                     <p class="reference1"><strong>Aldous Huxley</strong>, Brave New World</p>
                 </div>
                 <div>
                     <figure class="portrait2"><img src="portrait.png" alt="portrait"></figure>
-                    <p>Words can be like X-rays, if you use them properly—they’ll go through anything. You read and you’re pierced. Words can be like X-rays,
-                        if you use them properly—they’ll go through anything. You read and you’re pierced.</p>
+                    <p><em>Words can be like X-rays, if you use them properly—they’ll go through anything. You read and you’re pierced. Words can be like X-rays,
+                        if you use them properly—they’ll go through anything. You read and you’re pierced.</em></p>
                     <p class="reference2"><strong>Aldous Huxley</strong>, Brave New World</p>
                 </div>
                 <div>
                     <figure class="portrait1"><img src="portrait.png" alt="portrait"></figure>
-                    <p>Words can be like X-rays, if you use them properly—they’ll go through anything. You read and you’re pierced. Words can be like X-rays,
-                        if you use them properly—they’ll go through anything. You read and you’re pierced.</p>
+                    <p><em>Words can be like X-rays, if you use them properly—they’ll go through anything. You read and you’re pierced. Words can be like X-rays,
+                        if you use them properly—they’ll go through anything. You read and you’re pierced.</em></p>
                     <p class="reference1"><strong>Aldous Huxley</strong>, Brave New World</p>
                 </div>
-                <a href=""><img src="buttonArt1.png" alt="bla bla bla"></a>
+                <p><a href=""><button type="button" class="linkbutton">bla bla bla</button></a></p>
             </article>
-            <article id="article2">
-                <h2>NEW HORIZONS AWAIT</h2>
+            <article id="article2" class="central black">
+                <h2>NEW HORIZONS AWAIT</h2><hr>
                 <p>Even the all-powerful Pointing has no control about the blind texts it is almost unorthographic life One day however a small line of blind text by the name
                     of Lorem Ipsum decided.</p>
-                <a href=""><img src="buttonArt2.png" alt="bla bla bla"></a>
+                <a href=""><button type="button" class="linkbutton">bla bla bla</button></a>
             </article>
-            <address id="contact">
+            <address id="contact" class="central white">
                 <h2>CONTACT</h2>
                 <form action="">
-                    <div>
+                    <div class="flexdown">
                         <label for="name">YOUR NAME</label>
                         <input type="text" id="name">
                         <label for="email">YOUR EMAIL</label>
@@ -116,21 +137,21 @@
                         <label for="phone">YOUR PHONE</label>
                         <input type="text" id="phone">
                     </div>
-                    <div>
+                    <div class="flexdown">
                         <label for="subject">YOUR SUBJECT</label>
                         <input type="text" id="subject">
                         <label for="message">YOUR MESSAGE</label>
-                        <textarea id="message" cols="30" rows="10"></textarea>
+                        <textarea id="message" cols="30" rows="5"></textarea>
                         <input type="submit" value="SEND" id="send">
                     </div>
                 </form>
             </address>
         </main>
-        <footer>
+        <footer class="flexone black">
             <div id="about">
                 <h3>ABOUT VIBES</h3>
                 <p>VIBES is an ideal theme for creative folks or design agencies. <strong>Ease of use and top-notch web design techniques</strong> are wrapped with several gorgeous color schemes.</p>
-                <p>You can buy this responsive WordPress theme on<a href="">ThemeForest</a>.</p>
+                <p>You can buy this responsive WordPress theme on <a href="">ThemeForest</a>.</p>
             </div>
             <div id="newsletter">
                 <h3>NEWSLETTER</h3>
