@@ -1,18 +1,15 @@
 <?php
-/*
-* wip
-*/
     $capitales = array("France"=>"Paris", "Allemagne"=>"Berlin", "USA"=>"Washington", "Italie"=>"Rome");
     
     function afficherTableHTML($capitales) {
-        foreach ($capitales as $key => $value) {
-            # code...
-        }
-        return ksort($table);
+        $table = array_change_key_case($capitales, CASE_UPPER);
+        ksort($table);
+        return $table;
     }
-    echo '<table><tr><th style="strong">Pays</th><th style="strong">Capitale</th></tr>';
-    /*foreach ($capitales as $key => $value) {
-            echo "<tr><td>".mb_strtoupper($key)."</td><td>$value</td></tr>";
-        }*/
+    $capitales = afficherTableHTML($capitales);
+    echo '<table style="border-collapse: collapse"><tr><th style="border: 1px solid black">Pays</th><th style="border: 1px solid black">Capitale</th></tr>';
+    foreach ($capitales as $key => $value) {
+            echo '<tr><td style="border: 1px solid black">'.$key.'</td><td style="border: 1px solid black">'.$value.'</td></tr>';
+        }
     echo "</table>";
 ?>

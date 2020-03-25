@@ -6,6 +6,7 @@
         <link rel="stylesheet" href="style.css">
         <link href="https://fonts.googleapis.com/css?family=Oswald|Roboto&display=swap" rel="stylesheet">
         <title>Exercice Vibe</title>
+        
     </head>
     <body>
     <div id="wrapper">
@@ -66,27 +67,26 @@
                         <p class="panel">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil blanditiis illo ad reprehenderit commodi corporis aliquid,
                             doloribus nulla mollitia fuga necessitatibus amet deserunt sapiente cupiditate laboriosam minus. Voluptatum, corrupti ab.</p>
                     </div>
-                    <!--<script>
-                        var acc = document.getElementsByClassName("accordion");
-                        var i;
-
-                        for (i = 0; i < acc.length; i++) {
-                          acc[i].addEventListener("click", function() {
-                            /* Toggle between adding and removing the "active" class,
-                            to highlight the button that controls the panel */
-                            this.classList.toggle("active");
-                        
-                            /* Toggle between hiding and showing the active panel */
-                            var panel = this.nextElementSibling;
-                            if (panel.style.display === "block") {
-                              panel.style.display = "none";
-                            } else {
-                              panel.style.display = "block";
-                            }
-                          });
-                        }
-                    </script>-->
                 </div>
+                <script>
+                    var acc = document.getElementsByClassName("accordion");
+                    var i;
+                    for (i = 0; i < acc.length; i++) {
+                      acc[i].addEventListener("click", function() {
+                        /* Toggle between adding and removing the "active" class,
+                        to highlight the button that controls the panel */
+                        this.classList.toggle("active");
+                    
+                        /* Toggle between hiding and showing the active panel */
+                        var panel = this.nextElementSibling;
+                        if (panel.style.display === "block") {
+                          panel.style.display = "none";
+                        } else {
+                          panel.style.display = "block";
+                        }
+                      });
+                    }
+                </script>
             </section>       
             <section id="gallery">
                 <img src="gallery1.png" alt="image 1">
@@ -121,7 +121,7 @@
                 <p><a href=""><button type="button" class="linkbutton">bla bla bla</button></a></p>
             </article>
             <article id="article2" class="central black">
-                <h2>NEW HORIZONS AWAIT</h2><hr>
+                <h2>NEW HORIZONS AWAIT</h2>
                 <p>Even the all-powerful Pointing has no control about the blind texts it is almost unorthographic life One day however a small line of blind text by the name
                     of Lorem Ipsum decided.</p>
                 <a href=""><button type="button" class="linkbutton">bla bla bla</button></a>
