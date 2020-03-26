@@ -14,7 +14,7 @@
     $line2 = array_slice($pieces, -8);
     echo '<tr>';
     foreach ($line1 as $key => $value) {
-        if ($key/2 == floor($key/2)) {
+        if ($key%2 == 0) {
             echo '<td class="white">'.$value.' NOIR</td>';
         } else {
             echo '<td class="black">'.$value.' NOIR</td>';
@@ -22,7 +22,7 @@
     }
     echo '</tr><tr>';
     foreach ($line2 as $key => $value) {
-        if ($key/2 == floor($key/2)) {
+        if ($key%2 == 0) {
             echo '<td class="black">'.$value.' NOIR</td>';
         } else {
             echo '<td class="white">'.$value.' NOIR</td>';
@@ -32,7 +32,7 @@
     for ($i=0; $i < 6; $i++) { 
         echo '<tr>';
         for ($a=0; $a < 8; $a++) { 
-            if ($a/2 == floor($a/2) && $i/2 == floor($i/2) || $a/2 != floor($a/2) && $i/2 != floor($i/2)) {
+            if ($a%2 == 0 && $i%2 == 0 || $a%2 == 1 && $i%2 == 1) {
                 echo '<td class="white"></td>';
             } else {
                 echo '<td class="black"></td>';
@@ -42,7 +42,7 @@
     }
     echo '<tr>';
     foreach ($line2 as $key => $value) {
-        if ($key/2 == floor($key/2)) {
+        if ($key%2 == 0) {
             echo '<td class="white">'.$value.' BLANC</td>';
         } else {
             echo '<td class="black">'.$value.' BLANC</td>';
@@ -50,7 +50,7 @@
     }
     echo '</tr><tr>';
     foreach ($line1 as $key => $value) {
-        if ($key/2 == floor($key/2)) {
+        if ($key%2 == 0) {
             echo '<td class="black">'.$value.' BLANC</td>';
         } else {
             echo '<td class="white">'.$value.' BLANC</td>';

@@ -1,18 +1,12 @@
 $(document).ready(function() {
-    $("accordion").click(function(){
-        $(panel).toggle("")
+    $('.accordion').next('p').hide();
+    $('.accordion').click(function() {
+      if($(this).next('p').is(':hidden')) {
+        $('.accordion').next('p').slideUp('slow');
+        $(this).next('p').slideToggle('slow');
+      }
+      else {
+        $(this).next('p').slideToggle('slow');
+      }
     });
 });
-/* var acc = document.getElementsByClassName("accordion");
-                    var i;
-                    for (i = 0; i < acc.length; i++) {
-                      acc[i].addEventListener("click", function() {
-                        this.classList.toggle("active");
-                        var panel = this.nextElementSibling;
-                        if (panel.style.display === "block") {
-                          panel.style.display = "none";
-                        } else {
-                          panel.style.display = "block";
-                        }
-                      });
-                    }*/                    
