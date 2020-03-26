@@ -54,38 +54,22 @@
                 <div id="titles">
                     <button class="accordion">Section 1</button>
                     <div>
-                        <p class="panel">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sint quis esse saepe quam, eius odio aperiam qui unde perspiciatis veritatis veniam.
+                        <p class="panelhidden">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sint quis esse saepe quam, eius odio aperiam qui unde perspiciatis veritatis veniam.
                             Similique praesentium soluta saepe tempore distinctio facere vero labore.</p>
                     </div>
                     <button class="accordion">Section 2</button>
                     <div>
-                        <p class="panel">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur asperiores cum molestias obcaecati aliquam? Exercitationem animi a,
+                        <p class="panelhidden">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur asperiores cum molestias obcaecati aliquam? Exercitationem animi a,
                             doloremque vitae facilis eius veritatis, modi illum iure, dolor enim ad neque adipisci!</p>
                     </div>
                     <button class="accordion">Section 3</button>
                     <div>
-                        <p class="panel">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil blanditiis illo ad reprehenderit commodi corporis aliquid,
+                        <p class="panelhidden">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil blanditiis illo ad reprehenderit commodi corporis aliquid,
                             doloribus nulla mollitia fuga necessitatibus amet deserunt sapiente cupiditate laboriosam minus. Voluptatum, corrupti ab.</p>
                     </div>
                 </div>
                 <script>
-                    var acc = document.getElementsByClassName("accordion");
-                    var i;
-                    for (i = 0; i < acc.length; i++) {
-                      acc[i].addEventListener("click", function() {
-                        /* Toggle between adding and removing the "active" class,
-                        to highlight the button that controls the panel */
-                        this.classList.toggle("active");
                     
-                        /* Toggle between hiding and showing the active panel */
-                        var panel = this.nextElementSibling;
-                        if (panel.style.display === "block") {
-                          panel.style.display = "none";
-                        } else {
-                          panel.style.display = "block";
-                        }
-                      });
-                    }
                 </script>
             </section>       
             <section id="gallery">
@@ -167,5 +151,9 @@
             </div>
         </footer>
     </div>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+    crossorigin="anonymous"></script>
+    <script src="script.js"></script>
     </body>
 </html>

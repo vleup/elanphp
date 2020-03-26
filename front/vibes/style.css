@@ -187,13 +187,18 @@ footer a:visited {
     outline: none;
     transition: 0.5s;
   }
-  .active, .accordion:hover {
+  .accordion:hover {
     background-color: #ccc;
   }
-  .panel {
+  .panelhidden {
     padding: 0 18px;
     overflow: hidden;
     display: none;
+  }
+  .panelshown {
+    padding: 0 18px;
+    overflow: hidden;
+    display: initial;
   }
   .flexdown {
       display: flex;
