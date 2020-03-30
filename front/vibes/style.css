@@ -211,7 +211,7 @@ footer a:visited {
     color: #444;
     cursor: pointer;
     padding: 18px;
-    width: 200px;
+    width: 30em;
     text-align: left;
     border: none;
     outline: none;
@@ -266,5 +266,8 @@ footer a:visited {
   @media all and (max-width: 1024px) {
       #gallery {
           justify-content: center;
+      }
+      .accordion {
+          width: 20em;
       }
   }
