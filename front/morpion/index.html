@@ -7,26 +7,42 @@
     <title>Morpion</title>
 </head>
 <body>
-    <div>
+    <div id="player1">
+        <h1>Joueur 1</h1>
+        <p>Symbole : X</p>
+        <p id="victoryone">VICTOIRE!!!</p>
+    </div>
+    <div id="game">
         <table>
             <tbody>
                 <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
+                    <td id="1-1"></td>
+                    <td id="1-2"></td>
+                    <td id="1-3"></td>
                 </tr>
                 <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
+                    <td id="2-1"></td>
+                    <td id="2-2"></td>
+                    <td id="2-3"></td>
                 </tr>
                 <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
+                    <td id="3-1"></td>
+                    <td id="3-2"></td>
+                    <td id="3-3"></td>
                 </tr>
             </tbody>
         </table>
     </div>
+    <div id="player2">
+        <h1>Joueur 2</h1>
+        <p>Symbole : O</p>
+        <p id="victorytwo">VICTOIRE!!!</p>
+    </div>
+    <div id="replay"><button id="reset">Rejouer</button></div>
+    <script
+    src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+    crossorigin="anonymous"></script>
+    <script src="script.js"></script>
 </body>
 </html>
