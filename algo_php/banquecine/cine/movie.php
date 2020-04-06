@@ -13,14 +13,14 @@
         private $_genre;
         private $_cast;
 
-        public function __construct($title, $release, $length, $about, $director, $genre, $cast) {
+        public function __construct($title, $release, $length, $about, $director, $genre) {
           $this->_title = $title;
           $this->_release = $release;
           $this->_length = $length;
           $this->_about = $about;
           $this->_director = $director;
           $this->_genre = $genre;
-          $this->_cast = $cast;
+          $this->_cast = [];
         }
 
         public function getTitle() {
@@ -50,6 +50,10 @@
         public function lengthToHours($length) { //calculates the duration of a movie in hours
           $hours = floor($length/60);
           return $hours;
+        }
+
+        public function addToCast($role, $actor) {
+          $this->_cast[$role->getRole()] = $actor;
         }
 
         public function showInfo() { //displays all relevant information about a movie

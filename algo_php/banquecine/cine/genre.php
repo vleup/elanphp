@@ -19,11 +19,7 @@
         }
 
         public function getMovies() {
-            echo '<ul>';
-            foreach ($this->_movies as $value) {
-                echo "<li>$value</li>"
-            }
-            echo '</ul>';
+            return $this->_movies;
         }
     }
 ?>

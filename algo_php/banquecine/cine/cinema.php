@@ -5,6 +5,7 @@
     include('movie.php');
     include('role.php');
     include('genre.php');
+    include('person.php');
 //very much wip
 
     
