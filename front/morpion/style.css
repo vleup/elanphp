@@ -28,3 +28,6 @@ tr {
 #replay {
     align-self: flex-end;
 }
+#victoryone, #victorytwo, #draw {
+    display: none;
+}

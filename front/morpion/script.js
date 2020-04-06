@@ -14,21 +14,19 @@ function clickPlay() {
             $(`#${i}-${u}`).click(function() {
                if (activePlayer == 1) { 
                    $(`#${i}-${u}`).text('X')
-                   console.log(`${i}-${u} X`)
                    activePlayer = 2 
                 } else {
                     $(`#${i}-${u}`).text('O')
-                    console.log(`${i}-${u} O`)
                    activePlayer = 1
                 }
                 $(`#${i}-${u}`).off('click')
-                console.log(`${i}-${u} click off`)
+                checkVictory()
                 turnCount++
-                if (turnCount === 9) {
-                    console.log('Match nul')
-                } else {
-                    checkVictory()
+                if (turnCount === 9 && victory === false) {
+                    $('#draw').show()
                 }
+                
+                
                 
             })
         }
@@ -41,6 +39,7 @@ function checkVictory() {
     var p2Victory = 0
     var p1VictoryDiag = 0
     var p2VictoryDiag = 0
+    var victory = false
     
         //horizontal verification loop
     for (let i = 1; i <= 3 ; i++) {
@@ -58,12 +57,14 @@ function checkVictory() {
                 p2VictoryDiag++
             }
             if (p1Victory === 3 || p1VictoryDiag === 3) {
-                console.log('Victory p1')
+                $('#victoryone').show()
                 $('td').off('click')
+                victory = true
             }
             else if (p2Victory === 3 || p2VictoryDiag === 3) {
-                console.log('Victory p2')
+                $('#victorytwo').show()
                 $('td').off('click')
+                victory = true
             }
             else if (u === 3) {
                 p1Victory = 0
@@ -92,12 +93,14 @@ function checkVictory() {
                 p2VictoryDiag++
             }
             if (p1Victory === 3 || p1VictoryDiag === 3) {
-                console.log('Victory p1')
+                $('#victoryone').show()
                 $('td').off('click')
+                victory = true
             }
             else if (p2Victory === 3 || p2VictoryDiag === 3) {
-                console.log('Victory p2')
+                $('#victorytwo').show()
                 $('td').off('click')
+                victory = true
             }
             else if (u === 3) {
                 p1Victory = 0
@@ -110,6 +113,8 @@ function checkVictory() {
 function resetGame() {
     $('#reset').click(function() {
         $('td').text('')
-
+        $('#victoryone').hide()
+        $('#victorytwo').hide()
+        clickPlay()
     })
 }
