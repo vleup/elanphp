@@ -25,5 +25,13 @@
         public function getName() {
             return $this->_name;
         }
+
+        public function getRoles() {
+            return $this->_roles;
+        }
+
+        public function addRole($role) {
+            array_push($this->_roles, $roles);
+        }
     }
 ?>

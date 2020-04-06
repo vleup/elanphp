@@ -10,6 +10,10 @@
             $this->_movies = [];
         }
 
+        public function getGenre() {
+            return $this->_genre;
+        }
+
         public function addMovie($movie) {
             array_push($this->_movies, $movie);
         }

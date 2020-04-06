@@ -27,7 +27,27 @@
           return $this->_title;
         }
 
-        public function lengthToHours($length) { //calculates the duration of a movie in hours and minutes
+        public function getRelease() {
+          return $this->_release;
+        }
+
+        public function getAbout() {
+          return $this->_about;
+        }
+
+        public function getDirector() {
+          return $this->_director;
+        }
+
+        public function getGenre() {
+          return $this->_genre;
+        }
+
+        public function getCast() {
+          return $this->_cast;
+        }
+
+        public function lengthToHours($length) { //calculates the duration of a movie in hours
           $hours = floor($length/60);
           return $hours;
         }

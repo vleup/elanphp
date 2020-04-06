@@ -16,5 +16,17 @@
         public function getRole() {
             return $this->_role;
         }
+
+        public function getMovies() {
+            return $this->_movies;
+        }
+
+        public function getActors() {
+            return $this->_actors;
+        }
+
+        public function addMovie($title) {
+            array_push($this->_movies, $title);
+        }
     }
 ?>
