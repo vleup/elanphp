@@ -21,7 +21,7 @@
     </header>
     <section>
         <figure>
-            <img src="media/LufhansaBanner.png" alt="Air France banner">
+            <img src="" alt="Air France banner">
             <figcaption>Maintenant avec plus de distanciation sociale! Vos jambes vont kiffer!</figcaption>
         </figure>
     </section>
