@@ -91,4 +91,6 @@ label {
     color: white;
     border: none;
     width: 5em;
+    padding-top: 0.2em;
+    padding-bottom: 0.2em;
 }
