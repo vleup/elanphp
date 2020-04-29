@@ -21,15 +21,15 @@
             </nav>
         </header>
         <main>
-            <form action="" id="register">
+            <form action="editdb.php" id="register" method="post">
                 <label for="username">Nom d'utilisateur</label>
-                <input type="text" id="username">
+                <input type="text" name="username">
                 <label for="email">Courriel</label>
-                <input type="text" id="email">
+                <input type="text" name="email">
                 <label for="password1">Mot de passe</label>
-                <input type="text" id="password1">
+                <input type="password" name="password1">
                 <label for="password2">Confirmer mot de passe</label>
-                <input type="text" id="password2">
+                <input type="password" name="password2">
                 <input type="submit" id="submitButton">
             </form>
         </main>

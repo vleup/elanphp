@@ -21,12 +21,12 @@
             </nav>
         </header>
         <main>
-            <form action="" id="login">
+            <form action="" id="login" method="post">
                 <label for="email">Courriel</label>
-                <input type="text" id="email">
+                <input type="text" name="email">
                 <label for="password">Mot de passe</label>
-                <input type="text" id="password">
-                <input type="submit" id="submitButton">
+                <input type="password" name="password">
+                <input type="submit" name="submitButton">
             </form>
         </main>
     </div>

@@ -20,6 +20,7 @@ html, body {
 #navleft button {
     border: none;
     color: darkblue;
+    background-color: white;
     text-align: center;
     text-decoration-color: black;
     font-size: 2em;
@@ -28,6 +29,7 @@ html, body {
 #navright button {
     border: none;
     color: darkblue;
+    background-color: white;
     text-align: center;
 }
 
