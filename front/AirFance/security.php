@@ -1,5 +1,6 @@
 <?php
     session_start();
+
     if(!empty($_POST)) {
         $f_email = trim(filter_input(INPUT_POST, 'email', FILTER_SANITIZE_EMAIL));
         $f_password = filter_input(INPUT_POST, 'password', FILTER_VALIDATE_REGEXP, [
@@ -9,7 +10,7 @@
             require_once('connect.php');
             try {
                 $sql = "SELECT * FROM client c
-                        WHERE c.email = '"$f_email"'";
+                        WHERE c.email = '$f_email'";
                 $stmt = $link->query($sql);
                 $result = $stmt->fetch();
                 if($result !== false) {
@@ -17,8 +18,9 @@
                         $_SESSION['user'] = $result;
                         header('Location: welcome.php');
                     }
-                    else header('');
+                    else header('Location: login.php?error=1');
                 }
+                else header('Location: login.php?error=1');
             }
             catch(PDOException $e) {
                 echo $e->getMessage();
@@ -28,4 +30,5 @@
         else header('Location: login.php?error=1');
     }
     else header('Location: login.php?error=0');
+
 ?>

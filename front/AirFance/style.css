@@ -96,3 +96,7 @@ label {
     padding-top: 0.2em;
     padding-bottom: 0.2em;
 }
+
+h4 {
+    color: red;
+}

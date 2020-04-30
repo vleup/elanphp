@@ -1,3 +1,6 @@
+<?php
+    session_start();
+?>
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -21,7 +24,13 @@
             </nav>
         </header>
         <main>
-            <form action="" id="login" method="post">
+            <form action="security.php" id="login" method="post">
+                <?php
+                    include_once('model.php');
+                    if(!empty($_GET) && $_GET['error'] !== false) {
+                        echo '<h4>'.$errors[$_GET['error']].'</h4>';
+                    }
+                ?>
                 <label for="email">Courriel</label>
                 <input type="text" name="email">
                 <label for="password">Mot de passe</label>

@@ -1,3 +1,6 @@
+<?php
+    session_start();
+?>
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -21,7 +24,13 @@
             </nav>
         </header>
         <main>
-            <form action="editdb.php" id="register" method="post">
+            <form action="security2.php" id="register" method="post">
+                <?php
+                    include_once('model.php');
+                    if(!empty($_GET) && $_GET['error'] !== false) {
+                        echo '<h4>'.$errors[$_GET['error']].'</h4>';
+                    }
+                ?>
                 <label for="username">Nom d'utilisateur</label>
                 <input type="text" name="username">
                 <label for="email">Courriel</label>
