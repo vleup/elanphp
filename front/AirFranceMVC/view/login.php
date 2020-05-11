@@ -1,5 +1,5 @@
 <section>
-    <form action="security.php" id="login" method="post">
+    <form action="?action=login" id="login" method="post">
         <label for="username">Nom d'utilisateur</label>
         <input type="text" name="username">
         <label for="password">Mot de passe</label>
