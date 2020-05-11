@@ -68,7 +68,7 @@
                         if($_POST['password1'] === $_POST['password2']){
                             $hash = password_hash($_POST['password1'], PASSWORD_ARGON2I);
                             if($this->model->addUser($f_username, $f_email, $hash)){
-                                header("Location:?action=connexion");
+                                header("Location:?action=login");
                                 die();
                             }
                             //erreur d'insertion en base de données
