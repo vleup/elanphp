@@ -1,0 +1,102 @@
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+}
+
+#wrapper {
+    max-width: 1200px;
+    margin: 0;
+}
+
+#mainNav {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+#navleft button {
+    border: none;
+    color: darkblue;
+    background-color: white;
+    text-align: center;
+    text-decoration-color: black;
+    font-size: 2em;
+}
+
+#navright button {
+    border: none;
+    color: darkblue;
+    background-color: white;
+    text-align: center;
+}
+
+button:hover {
+    text-decoration: underline;
+}
+
+#navright button:hover {
+    color: red;
+}
+
+#banner figure {
+	position: relative;
+	margin: 0;
+}
+#banner img{
+	object-fit: cover;
+	width: 100%;
+	height: 100%;
+}
+
+#banner figcaption {
+    width: 100%;
+    color: white;
+    background-color:  rgba(2, 12, 24, 0.555);
+    margin: 0;
+	padding: 0.5em;
+	position: absolute;
+	bottom: 0;
+	text-align: center;
+}
+
+main {
+    display: flex;
+}
+
+article {
+    padding: 0.5em;
+}
+
+h1 {
+    color: darkblue;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+input {
+    margin: 1em;
+}
+
+label {
+    margin-left: 1em;
+    margin-top: 1em;
+}
+
+#submitButton {
+    background-color: darkblue;
+    color: white;
+    border: none;
+    width: 5em;
+    padding-top: 0.2em;
+    padding-bottom: 0.2em;
+}
+
+h4 {
+    color: red;
+}
