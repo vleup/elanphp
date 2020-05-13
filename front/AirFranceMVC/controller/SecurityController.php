@@ -64,10 +64,10 @@
                 ]);
                 
                 if ($f_username && $f_email && $f_password1 && $f_password2) {
-                    if(!$this->model->getUser($f_username)){
-                        if($_POST['password1'] === $_POST['password2']){
+                    if(!$this->model->getUser($f_username)) {
+                        if($_POST['password1'] === $_POST['password2']) {
                             $hash = password_hash($_POST['password1'], PASSWORD_ARGON2I);
-                            if($this->model->addUser($f_username, $f_email, $hash)){
+                            if($result === true) {
                                 header("Location:?action=login");
                                 die();
                             }

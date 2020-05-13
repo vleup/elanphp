@@ -35,7 +35,7 @@
         public function addUser($username, $email, $hash) {
             try{
                 $sql = "INSERT INTO client (username, email, password)
-                        VALUES (:name, :mail :pass);";
+                        VALUES (:name, :mail, :pass);";
 
             //préparation de la requète dans le serveur       
                 $stmt = self::$connexion->prepare($sql);
